@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost/static/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost-Bold;
+    src: url(../fonts/Jost/static/Jost-Bold.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: Jost, Arial, sans-serif;
+
+    background-color: black;
+    background-image:
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+        radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-family: Jost-Bold;
+}
+
+.home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background: none;
+    border: 5px solid rgba(255, 102, 0, 0.9);
+    color: white;
+
+    font-size: 30px;
+    font-family: Jost-Bold;
+
+    width: 120px;
+    padding: 12px 0;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 10px 5px rgb(255, 102, 0);
+    text-decoration: underline;
+}
+
+
+
+.iframe-container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
