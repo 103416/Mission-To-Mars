@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boter Kaas en Eiren</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Boter Kaas en Eiren</h1>
+
+    <div id="Main">
+        <div id="rij1">
+            <input type="checkbox" id="1" onclick="check(this)"> <br>
+            <input type="checkbox" id="2" onclick="check(this)"> <br>
+            <input type="checkbox" id="3" onclick="check(this)">
+        </div>
+        <div id="rij2">
+            <input type="checkbox" id="4" onclick="check(this)"> <br>
+            <input type="checkbox" id="5" onclick="check(this)"> <br>
+            <input type="checkbox" id="6" onclick="check(this)">
+        </div>
+        <div id="rij3">
+            <input type="checkbox" id="7" onclick="check(this)"> <br>
+            <input type="checkbox" id="8" onclick="check(this)"> <br>
+            <input type="checkbox" id="9" onclick="check(this)">
+        </div>
+    </div>
+
+    <h1 id="beurt">Speler 1 is aan de beurt</h1>
+
+    <div id="buttons">
+        <button onclick="Reset()">Opnieuw</button>
+        <button onclick="terug()">Terug</button>
+    </div>
+</body>
+</html>

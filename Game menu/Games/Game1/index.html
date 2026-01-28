@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Snake</h1>
+    <canvas id="canvas"></canvas>
+    <button onclick="start1()">Start</button>
+    <div class="controls">
+        <button class="up" onclick="setDirection(0, -1)">⬆</button>
+        <div class="middle">
+            <button onclick="setDirection(-1, 0)">⬅</button>
+            <button onclick="setDirection(1, 0)">➡</button>
+        </div>
+        <button class="down" onclick="setDirection(0, 1)">⬇</button>
+    </div>
+    
+    <button onclick="terug()">Terug</button>    
+</body>
+</html>

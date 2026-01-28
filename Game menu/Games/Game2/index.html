@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="bal.js" defer></script>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="500" class="hide"></canvas>
+    <div id="scoreboard" class="hide">
+        <span id="speler1Naam"></span>
+        <span id="speler2Naam"></span>
+    </div>
+    <div id="buttons">
+        <div id="Menu">
+        </div>
+        <div id="MofR" class="hide">
+            <button onclick="human()">Mens</button>
+            <button onclick="bot()">Robot</button>
+        </div>
+        <div id="naam" class="hide">
+            <input type="text" id="naam1" placeholder="speler1...">
+            <input type="text" id="naam2" placeholder="speler2...">
+            <button onclick="start2()">Play</button>
+        </div>
+        <div id="terug"  class="hide">
+            <button onclick="terug()">terug</button>
+        </div>
+    </div>
+    <div class="pong-controls hide" id="touchControls">
+        <div class="left">
+            <button id="p1Up">⬆</button>
+            <button id="p1Down">⬇</button>
+        </div>
+    
+        <div class="right">
+            <button id="p2Up">⬆</button>
+            <button id="p2Down">⬇</button>
+        </div>
+    </div>
+    <button id="backBtn">Terug</button>      
+</body>
+</html>

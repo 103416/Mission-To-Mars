@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: radial-gradient(circle at top, #1b2735, #05060a);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 10px #4fc3f7;
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 2px solid #4fc3f7;
+    box-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+    background-color: black;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle {
+    display: flex;
+    gap: 20px;
+}
+
+.controls button {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    color: white;
+
+    background: linear-gradient(145deg, #111, #222);
+    border: 2px solid #4fc3f7;
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.6);
+}
+
+.controls button:active {
+    transform: scale(0.9);
+    background: #4fc3f7;
+    color: black;
+}
+
+body > button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #f44336;
+    background: transparent;
+    color: white;
+}
+
+body > button:hover {
+    background: #f44336;
+    cursor: pointer;
+}

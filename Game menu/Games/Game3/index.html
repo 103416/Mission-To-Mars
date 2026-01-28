@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 class="titel">Memory</h1>
+
+    <div class="score">
+        <p id="score1">0</p>
+        <p> - </p>
+        <p id="score2">0</p>
+    </div>
+
+    <p id="speler">Speler 1 is aan de beurt!</p>
+
+    <div class="rij1">
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+    </div>
+
+    <div class="rij2">
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+        <button class="kaart" onclick="check(this)"></button>
+    </div>
+    <div id="terug">
+        <button onclick="terug()">Terug</button>
+    </div>
+</body>
+</html>

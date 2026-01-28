@@ -1,0 +1,76 @@
+body {
+    background: radial-gradient(circle at top left, #000010, #000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    margin-bottom: 20px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+p {
+    color: white;
+}
+
+.kaart {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    font-size: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #111, #333);
+    color: white;
+    border: 2px solid #0ff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.kaart:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #333, #111);
+}
+
+.verborgen {
+    color: transparent;
+}
+
+.rij1, .rij2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#terug {
+    margin-top: 20px;
+}
+
+#terug button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #0ff;
+    background-color: #111;
+    color: #0ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#terug button:hover {
+    transform: scale(1.05);
+    background-color: #222;
+}
